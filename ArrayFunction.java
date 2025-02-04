@@ -53,6 +53,17 @@ public class ArrayFunction {
         return index;
     }
 
+    // Method to convert an array to an ArrayList
+    public ArrayList<Integer> convertArrayToList(int[] array) {
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        for (int num : array) {
+            arrayList.add(num);
+        }
+        display(arrayList); // Display the converted list
+        return arrayList;
+    }
+
+    
 
 
 }
