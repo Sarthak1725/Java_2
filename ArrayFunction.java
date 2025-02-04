@@ -63,7 +63,15 @@ public class ArrayFunction {
         return arrayList;
     }
 
-    
+    // Method to convert an ArrayList back to an array
+    public int[] convertListToArray(ArrayList<Integer> list) {
+        int[] array = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            array[i] = list.get(i);
+        }
+        displayArr(array); // Display the converted array
+        return array;
+    }
 
 
 }
