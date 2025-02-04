@@ -34,6 +34,25 @@ public class ArrayFunction {
         display(odd);
     }
 
-    
+    // Method to find the index where the smallest consecutive difference occurs
+    public int consecDiff(int[] array) {
+        int smallest = Integer.MAX_VALUE; 
+        int diff;
+        int index = -1; 
+
+        for (int i = 0; i < array.length - 1; i++) {
+            diff = Math.abs(array[i + 1] - array[i]); 
+            if (diff < smallest) {
+                smallest = diff;
+                index = i;
+            }
+        }
+
+        System.out.println("Smallest difference is: " + smallest);
+        System.out.println("Index is: " + index);
+        return index;
+    }
+
+
 
 }
